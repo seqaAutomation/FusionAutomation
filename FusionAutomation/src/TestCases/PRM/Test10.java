@@ -19,6 +19,7 @@ public class Test10 extends Base{
 	  report.log("PASS", ReportCreator.getTestName());
 	  report.log("PASS", System.getProperty("url"));
 	  report.log("PASS", System.getProperty("url")+" My new url test");
+	  report.log("PASS", System.getProperty("url")+" My new url test1");
 //	  
 //	  
 //	  File directory = new File("./src/test/com/TestCases");
