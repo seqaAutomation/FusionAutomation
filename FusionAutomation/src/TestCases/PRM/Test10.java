@@ -18,7 +18,7 @@ public class Test10 extends Base{
 //	  type("test", ReportCreator.getTestName());
 	  report.log("PASS", ReportCreator.getTestName());
 	  report.log("PASS", System.getProperty("url"));
-	  report.log("PASS", System.getProperty("url")+" Ant test");
+	  report.log("PASS", System.getProperty("url")+" Ant test completed");
 //	  
 //	  
 //	  File directory = new File("./src/test/com/TestCases");
