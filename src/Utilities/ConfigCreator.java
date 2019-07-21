@@ -22,7 +22,7 @@ public class ConfigCreator {
 	  String release = System.getProperty("Release");
 	  try 
 	  {
-      FileInputStream in = new FileInputStream("Files/Config2.properties");
+      FileInputStream in = new FileInputStream("Files/Config.properties");
       Properties props = new Properties();
       
 		props.load(in);
@@ -66,7 +66,7 @@ public class ConfigCreator {
     	  props.setProperty("Release", release);
       }
       
-      FileOutputStream out = new FileOutputStream("Files/Config2.properties");
+      FileOutputStream out = new FileOutputStream("Files/Config.properties");
       props.store(out, null);
       out.close();
       } catch (IOException e) {
