@@ -22,7 +22,6 @@ public class ConfigCreator {
 	  String release = System.getProperty("Release");
 	  try 
 	  {
-	  
       FileInputStream in = new FileInputStream("Files/Config2.properties");
       Properties props = new Properties();
       
