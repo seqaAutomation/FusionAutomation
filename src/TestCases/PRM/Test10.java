@@ -16,6 +16,10 @@ public class Test10 extends Base{
 	  System.out.println("Started Test10");
 	  System.out.println("End Test10");
 //	  type("test", ReportCreator.getTestName());
+	  String url = fileUtility.getDataFromConfig("URL");
+	  driver().get(url);
+	  think(3000);
+	  report.captureScreenShot("Google");	
 	  report.log("PASS", ReportCreator.getTestName());
 	  report.log("PASS", System.getProperty("url"));
 	  report.log("PASS", System.getProperty("url")+" Ant test completed");

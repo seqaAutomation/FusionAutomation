@@ -18,6 +18,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 import Helper.HelperFunctions;
 import ProductLib.Gmail.GmailLib;
+import Utilities.ConfigCreator;
 import Utilities.EmailUtility;
 import Utilities.Report;
 
@@ -26,6 +27,8 @@ public class Base extends HelperFunctions {
   public void setup() 
   {
 	  report = new Report();
+	  ConfigCreator configFileCreate = new ConfigCreator();
+	  configFileCreate.loadConfigValFromJenkins();
 	  
   }
   
